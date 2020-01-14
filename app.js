@@ -17,7 +17,7 @@ var campgroundRoutes = require("./routes/campgrounds");
 var indexRoutes = require("./routes/index");
 
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 mongoose.connect(
   "mongodb+srv://YelpCamp:ThisIsThePassword@cluster0-xehsk.mongodb.net/yelp_camp?retryWrites=true&w=majority",
